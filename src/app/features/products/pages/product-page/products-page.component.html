@@ -1,0 +1,10 @@
+<button mat-raised-button color="primary" (click)="showList = !showList">
+  {{ showList ? "Ocultar lista" : "Mostrar lista" }}
+</button>
+
+<ng-container *ngIf="showList" >
+  <app-product-item 
+    *ngFor="let product of products" 
+    [product]="product">
+  </app-product-item>
+</ng-container>
