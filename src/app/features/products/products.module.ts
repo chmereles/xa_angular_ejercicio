@@ -6,6 +6,7 @@ import { ProductsPageComponent } from './pages/product-page/products-page.compon
 import { MatButtonModule } from '@angular/material/button';
 import { ProductItemComponent } from './pages/product-item/product-item.component';
 import { MatCardModule } from '@angular/material/card';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MatCardModule } from '@angular/material/card';
     CommonModule,
     ProductosRoutingModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    SharedModule
   ]
 })
 export class ProductsModule { }
